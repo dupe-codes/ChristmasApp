@@ -1,0 +1,25 @@
+from flask import Flask, render_template, request
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return render_template('home.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/input')
+def input():
+    return render_template('enterInfo.html')
+
+@app.route('/input_response', methods=['GET', 'POST'])
+def input_response():
+    if request.method == 'POST':
+        month = request.form['month']
+        day = request.form['day']
+        year = request.form['year']
+        return render_template('test.html', month=month, day=day, year=year)
+
+app.debug = True
