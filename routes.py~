@@ -18,8 +18,8 @@ def input():
 def input_response():
     if request.method == 'POST':
         inputs = request.form.keys()
-        if not 'sender' in inputs:
-            return render_template('enterInfo.html', error="You left a field blank!")
+        for key in inputs:
+            print key
         if not ('recipient' in inputs and 'message' in inputs 
                 and 'background' in inputs and 'sender' in inputs):
             return render_template('enterInfo.html',
@@ -31,4 +31,5 @@ def input_response():
         return render_template('card.html', name=recipient,
                                msg=message, bg=background, sender=sender)
 
-app.debug = True
+if __name__ == '__main__':
+    app.run()

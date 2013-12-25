@@ -96,8 +96,14 @@ h3 {
 }
 
 .background{
-	max-width: 940px
+	position: absolute;
+	max-width: 940px;
 	height: auto;
 	width: auto;
+	z-index: -1000;
+}
+
+.recipient-name{
+	position: static;
 }
 	

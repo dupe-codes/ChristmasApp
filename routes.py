@@ -18,15 +18,19 @@ def input():
 def input_response():
     if request.method == 'POST':
         inputs = request.form.keys()
-        if not ('recipient' in inputs and 'message' in inputs 
-                and 'background' in inputs and 'sender' in inputs):
+        if not 'background' in inputs: 
             return render_template('enterInfo.html',
                                    error="You must fill in all fields")
         recipient = request.form['recipient']
         sender = request.form['sender']
         message = request.form['message']
         background = request.form['background']
+        if not recipient or not sender or not message:
+            return render_template('enterInfo.html',
+                                   error="You must fill in all fields")
+        
         return render_template('card.html', name=recipient,
                                msg=message, bg=background, sender=sender)
 
-app.debug = True
+if __name__ == '__main__':
+    app.run()

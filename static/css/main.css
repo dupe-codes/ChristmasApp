@@ -96,8 +96,48 @@ h3 {
 }
 
 .background{
+	position: absolute;
 	max-width: 940px;
 	height: auto;
 	width: auto;
+	z-index: -1000;
 }
+
+.recipient-name{
+	position: static;
+}
+
+.recipient-name-snow{
+	padding-left: 50px;
+	padding-top: 15px;
 	
+}
+
+.card-message-snow{
+	width: 400px;
+	padding-left: 60px;
+	font-size: 20px;
+}
+
+.sender-name-snow{
+	padding-left: 180px;
+	padding-top: 300px;
+
+}
+
+.recipient-name-tree{
+	color: white;
+	padding-left: 525px;
+	padding-top: 40px;
+}
+
+.card-message-tree{
+	padding-left: 600px;
+	color: white;
+	width: 300px;
+}
+
+.sender-name-tree{
+	padding-left: 675px;
+	color: white;
+}
