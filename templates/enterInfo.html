@@ -1,26 +1,35 @@
 {% extends "layout.html" %}
 
 {% block content %}
+<h1>Create Your Christmas Card!</h1>
+<p>To create your custom christmas card for your loved ones, just fill out the following information!</p>
 <form method="post" action="/input_response">
-  What is your birthday?
+  <label>
+    Your name
+    <input type="text" name="sender">
+  </label>
   <br>
   <label>
-    Month
-    <input type="text" name="month">
-  </label>
-  
-  <label> 
-    Day
-    <input type="text" name="day">
-  </label>
-
-  <label>
-    Year
-    <input type="text" name="year">
+    Name of recipient(s)
+    <input type="text" name="recipient">
   </label>
   <br>
+  <label>
+    Your Message
+    <br>
+    <textarea name="message" rows="10" cols="40"></textarea>
+  </label>
+  <br>
+  <label>
+    What background would you like?
+    <input type="radio" name="background" value="snow">Snow</input>
+    <input type="radio" name="background" value="tree">Christmas Tree</input>
+    <input type="radio" name="background" value="sleigh">Santa's Sleigh</input>
+  </label>
   <br>
   <input type="submit">
+  {% if error %}<p style="color: red">Error: {{ error }}</p>{% endif %}
 </form>
+
 {% endblock %}
 

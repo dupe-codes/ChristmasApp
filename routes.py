@@ -12,14 +12,21 @@ def about():
 
 @app.route('/input')
 def input():
-    return render_template('enterInfo.html')
+    return render_template('enterInfo.html', error=None)
 
 @app.route('/input_response', methods=['GET', 'POST'])
 def input_response():
     if request.method == 'POST':
-        month = request.form['month']
-        day = request.form['day']
-        year = request.form['year']
-        return render_template('test.html', month=month, day=day, year=year)
+        inputs = request.form.keys()
+        if not ('recipient' in inputs and 'message' in inputs 
+                and 'background' in inputs and 'sender' in inputs):
+            return render_template('enterInfo.html',
+                                   error="You must fill in all fields")
+        recipient = request.form['recipient']
+        sender = request.form['sender']
+        message = request.form['message']
+        background = request.form['background']
+        return render_template('card.html', name=recipient,
+                               msg=message, bg=background, sender=sender)
 
 app.debug = True
