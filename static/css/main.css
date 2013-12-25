@@ -141,3 +141,22 @@ h3 {
 	padding-left: 675px;
 	color: white;
 }
+
+.recipient-name-sleigh{
+	color: white;
+	padding-left: 45px;
+	padding-top: 15px;
+}
+
+.card-message-sleigh{
+	color: white;
+	padding-left: 50px;
+	padding-top: 45px;
+	width: 600px;
+}
+
+.sender-name-sleigh{
+	color: white;
+	padding-top: 350px;
+	padding-left: 675px;
+}

@@ -5,17 +5,17 @@
   {% if bg == 'snow' %}
   <img class="background" src="http://www.hdwallpaperspick.com/wp-content/uploads/2012/09/conifers-in-snow-wallpaper.jpg">
   <div class="snow">
-      <h1 class="recipient-name snow">My Dearest {{ name }},</h1>
-      <p class="card-message snow">{{ msg }}</p>
-      <h1 class="sender-name snow">Yours Truly, <br> {{ sender }}</h1>
+      <h1 class="recipient-name-snow">My Dearest {{ name }},</h1>
+      <p class="card-message-snow"><strong>{{ msg }}</strong></p>
+      <h1 class="sender-name-snow">Yours Truly, <br> {{ sender }}</h1>
   </div>
   {% endif %}
   {% if bg == 'tree' %}
   <img class="background" src="http://6269-9001.zippykid.netdna-cdn.com/wp-content/uploads/2013/09/Free-Christmas-Tree-Live-Wallpaper.jpg">
   <div class="tree">
-    <h1 class="recipient-name tree">My Dearest {{ name }},</h1>
-    <p class="card-message tree">{{ msg }}</p>
-    <h1 class="sender-name tree">Yours Truly, <br> {{ sender }}</h1>
+    <h1 class="recipient-name-tree">My Dearest {{ name }},</h1>
+    <p class="card-message-tree">{{ msg }}</p>
+    <h1 class="sender-name-tree">Yours Truly, <br> {{ sender }}</h1>
   </div>
   {% endif %}
 
