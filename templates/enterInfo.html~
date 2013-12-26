@@ -5,6 +5,11 @@
 <p>To create your custom christmas card for your loved ones, just fill out the following information!</p>
 <form method="post" action="/input_response">
   <label>
+    Your name
+    <input type="text" name="sender">
+  </label>
+  <br>
+  <label>
     Name of recipient(s)
     <input type="text" name="recipient">
   </label>

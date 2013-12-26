@@ -28,10 +28,8 @@
   </div>
   {% endif %}
   {% if title %}
-  <h2 class="share-link{% if bg == 'tree' %} extend {% endif %}">Share your card by with the following link: <a href="/get_card/{{ title }}">
+  <h2 class="share-link">Share your card by with the following link: 
       mychristmascards.herokuapp.com/get_card/{{ title }}
-    </a>
   </h2>
-  {% endif %}
-
+  
 {% endblock %}

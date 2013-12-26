@@ -106,4 +106,73 @@ h3 {
 .recipient-name{
 	position: static;
 }
+
+.recipient-name-snow{
+	padding-left: 50px;
+	padding-top: 15px;
 	
+}
+
+.card-message-snow{
+	width: 400px;
+	padding-left: 60px;
+	font-size: 20px;
+}
+
+.sender-name-snow{
+	padding-left: 180px;
+	padding-top: 300px;
+
+}
+
+.recipient-name-tree{
+	color: white;
+	padding-left: 525px;
+	padding-top: 40px;
+}
+
+.card-message-tree{
+	padding-left: 600px;
+	color: white;
+	width: 300px;
+}
+
+.sender-name-tree{
+	padding-left: 675px;
+	color: white;
+}
+
+.recipient-name-sleigh{
+	color: white;
+	padding-left: 45px;
+	padding-top: 15px;
+}
+
+.card-message-sleigh{
+	color: white;
+	padding-left: 50px;
+	padding-top: 45px;
+	width: 600px;
+}
+
+.sender-name-sleigh{
+	color: white;
+	padding-top: 350px;
+	padding-left: 675px;
+}
+
+.entries{
+	list-style-type: none;
+}
+
+.entries li{
+	 list-style-type: none;
+}
+
+.share-link{
+	margin-top: 150px;
+	margin-bottom: 50px;
+}
+
+.extend{
+	margin-top: 600px !important;

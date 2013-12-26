@@ -160,3 +160,20 @@ h3 {
 	padding-top: 350px;
 	padding-left: 675px;
 }
+
+.entries{
+	list-style-type: none;
+}
+
+.entries li{
+	 list-style-type: none;
+}
+
+.share-link{
+	margin-top: 150px;
+	margin-bottom: 50px;
+}
+
+.extend{
+	margin-top: 600px !important;
+}
